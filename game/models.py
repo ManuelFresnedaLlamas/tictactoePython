@@ -7,7 +7,7 @@ from django.db import models
 
 
 class Game(models.Model):
-    id = models.BigAutoField(primary_key=True)  # Asegura que la clave primaria sea del tipo BigAutoField
+    id = models.BigAutoField(primary_key=True)  #
     board = models.CharField(max_length=9, default=' ' * 9)
     current_player = models.CharField(max_length=1, default='X')
     winner = models.CharField(max_length=1, null=True, blank=True)
